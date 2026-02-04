@@ -1,0 +1,7 @@
+{
+  "name": "COGNITO - Psychological Profiling",
+  "description": "An AI-powered psychological profiling engine that creates deep, structured dossiers based on cognitive functions, Big Five traits, and situational analysis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

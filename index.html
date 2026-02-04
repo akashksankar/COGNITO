@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COGNITO | Psychological Profiling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Shim process for browser environment to prevent ReferenceErrors
+      window.process = window.process || { env: {} };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: #0a0a0c;
+            color: #f3f4f6;
+        }
+        h1, h2, h3, h4, .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-main {
+            background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.15), transparent),
+                        radial-gradient(circle at bottom right, rgba(167, 139, 250, 0.1), transparent);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+        
+        @media print {
+            body { background: white !important; color: black !important; }
+            .glass, .glass-dark { background: white !important; border: 1px solid #ddd !important; backdrop-filter: none !important; color: black !important; box-shadow: none !important; }
+            nav, aside, footer, .no-print, button, .save-indicator { display: none !important; }
+            main { padding-top: 0 !important; }
+            .text-gradient { -webkit-text-fill-color: black !important; background: none !important; }
+            .text-white, .text-white/80, .text-white/60 { color: black !important; }
+            .bg-indigo-600, .bg-rose-600 { background: #eee !important; color: black !important; border: 1px solid #ccc !important; }
+            .max-w-7xl { max-width: 100% !important; }
+            .flex-col.md\:flex-row { flex-direction: column !important; }
+            .flex-1 { width: 100% !important; }
+            h3, h4 { color: black !important; }
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gradient-main">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
